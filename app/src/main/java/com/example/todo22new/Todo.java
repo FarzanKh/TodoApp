@@ -5,6 +5,8 @@ public class Todo {
     private boolean checked;
 
 
+
+
     public String getName() {
         return name;
     }

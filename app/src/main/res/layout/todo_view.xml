@@ -32,22 +32,4 @@
         android:layout_marginTop="5dp"
         android:text="Delete" />
 
-<!--    <CheckedTextView-->
-<!--        android:id="@+id/simpleCheckedTextView"-->
-<!--        android:layout_width="fill_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:checked="true"-->
-<!--        android:gravity="center"-->
-<!--        android:checkMark="@drawable/tick"-->
-<!--        android:checkMarkTint="@color/colorPrimary"-->
-<!--        android:checkMarkTintMode="add"-->
-<!--        android:text="Simple Checked TextView" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/todo_item"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"/>-->
-
-
-
 </androidx.appcompat.widget.LinearLayoutCompat>
