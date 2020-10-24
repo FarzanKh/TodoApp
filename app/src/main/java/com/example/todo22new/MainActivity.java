@@ -3,12 +3,17 @@ package com.example.todo22new;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
+    private FloatingActionButton addFab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,16 @@ public class MainActivity extends AppCompatActivity {
         CustomAdapter adapter = new CustomAdapter(this, getTodo());
         listView.setAdapter(adapter);
 
+
+        // Add a new entry when clicking the FAB button
+        addFab = findViewById(R.id.floatingActionButton);
+        addFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Create new entry", Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
 
     private ArrayList<Todo> getTodo() {

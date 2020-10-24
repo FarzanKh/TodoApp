@@ -4,9 +4,6 @@ public class Todo {
     private String name;
     private boolean checked;
 
-
-
-
     public String getName() {
         return name;
     }
@@ -22,4 +19,7 @@ public class Todo {
     public void setChecked(boolean checked) {
         this.checked = checked;
     }
+
+    // Do I need to add the 'delete' button attribute here?
+
 }
